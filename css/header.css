@@ -64,9 +64,20 @@ header {
   background-image: url("../imgs/block_bg.png");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.logo-row .elips {
+  position: absolute;
+  width: 69.64%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .logo {
+  position: relative;
+  z-index: 2;
   width: 27.8%;
   margin: auto;
 }
@@ -74,6 +85,8 @@ header {
 nav {
   width: 100%;
   background: linear-gradient(89.98deg, #AE8625 0.02%, #F7EF8A 44.28%, #D2AC47 69.79%, #F4D63B 99.99%);
+  position: relative;
+  z-index: 2;
 }
 
 .navbar {
