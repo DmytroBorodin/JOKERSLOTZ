@@ -30,6 +30,26 @@ button:focus, input:focus {
 /* Variables */
 /* Mixings */
 /* Main Setting */
+html {
+  font-family: "Mitr";
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+
+.section {
+  position: relative;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   position: relative;
   width: 1005px;
@@ -109,4 +129,8 @@ nav {
 .menu-item:hover {
   color: #D90101;
   border-bottom: 1px solid #D90101;
+}
+
+.block img {
+  width: 100%;
 }
