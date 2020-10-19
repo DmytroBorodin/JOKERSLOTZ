@@ -1,0 +1,87 @@
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	box-sizing: border-box;
+}
+a, img, button, input {
+	display: block;
+	
+}
+a, img, button {
+	cursor: pointer;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+a {
+	text-decoration: none;
+}
+button:focus, input:focus {
+	outline: none;
+}
+
+
+/* Variables */
+$mainTextColor: #fff;
+
+/* Mixings */
+
+@mixin flex-displaing($prop1, $prop2) {
+	display: flex;
+	justify-content: $prop1;
+	align-items: $prop2
+}
+/* Main Setting */
+html {
+	font-family: 'Mitr';
+}
+body {
+	background: #000;
+	overflow-x: hidden;
+	position: relative;
+}
+body.locked {
+	overflow: hidden;
+}
+.section {
+	position: relative;
+}
+.wrap {
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+.container {
+	position: relative;
+	width: 1005px;
+	margin: auto;
+}
+.row {
+	width: 100%;
+	@include flex-displaing(space-between, center);
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 720px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 335px;
+	}
+}
+@media screen and (max-width: 374px) {
+	.container {
+		width: 310px;
+	}
+}

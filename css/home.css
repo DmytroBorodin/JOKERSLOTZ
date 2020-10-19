@@ -37,6 +37,11 @@ html {
 body {
   background: #000;
   overflow-x: hidden;
+  position: relative;
+}
+
+body.locked {
+  overflow: hidden;
 }
 
 .section {
@@ -63,6 +68,26 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .container {
+    width: 310px;
+  }
+}
 .s-1 {
   margin-top: 51px;
   overflow: hidden;
@@ -230,6 +255,10 @@ body {
   padding-left: 30.84%;
 }
 
+.block-title.hidden {
+  display: none;
+}
+
 .block-title {
   background: -webkit-linear-gradient(180deg, #FEFEB7 0%, #FFEB5A 33.33%, #C98E24 68.23%, #E6BB34 100%);
   -webkit-background-clip: text;
@@ -247,7 +276,6 @@ body {
 
 .game .wrap {
   background-image: url("../imgs/game_bg.png");
-  background-size: 105%;
 }
 
 .block-container {
@@ -289,7 +317,6 @@ body {
 
 .shooter .wrap {
   background-image: url("../imgs/shooter_bg.png");
-  background-size: 105%;
 }
 
 .s-6 .section-elips {
@@ -300,7 +327,6 @@ body {
 
 .main-games .wrap {
   background-image: url("../imgs/main_games_bg.png");
-  background-size: 105%;
 }
 
 .s-7 .row {
@@ -312,7 +338,6 @@ body {
 
 .articles-container .wrap {
   background-image: url("../imgs/articles_bg.png");
-  background-size: 105%;
 }
 
 .main-article-block {
@@ -350,4 +375,165 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1439px) {
+  .section .section-elips {
+    position: absolute;
+    width: 69.64%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .article-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-elips {
+    display: none;
+  }
+
+  .container-title {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .count-block {
+    border-radius: 7px;
+  }
+
+  .count-span {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 7px;
+  }
+
+  .border-span {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .count-row img {
+    width: 45px;
+  }
+
+  .plus {
+    display: none;
+  }
+
+  .block-title.hidden {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jackpot {
+    padding: 3px;
+    margin-bottom: 24px;
+  }
+  .jackpot .wrap {
+    padding: 30px 0;
+  }
+
+  .container-title {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .count-block {
+    border-radius: 2px;
+  }
+
+  .count-span {
+    border-radius: 2px;
+  }
+
+  .border-span {
+    width: 3.6%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .count-row img {
+    width: 45px;
+  }
+
+  .big-win {
+    padding: 5px 0;
+  }
+  .big-win .container-title {
+    padding-top: 13px;
+  }
+
+  .images-block {
+    padding: 0px 0 55px;
+  }
+
+  .s-2, .s-3, .s-4, .s-5, .s-6 {
+    margin-bottom: 24px;
+  }
+
+  .description .wrap {
+    padding: 17px 11px 0px 18px;
+  }
+
+  .block-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .main-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .block-container .wrap {
+    border-radius: 10px;
+    padding: 20px 20px 0;
+  }
+
+  .card-item {
+    width: 46.875%;
+    margin-bottom: 20px;
+  }
+
+  .game .wrap {
+    background-image: url("../imgs/game_bg_min.png");
+  }
+
+  .shooter .wrap {
+    background-image: url("../imgs/shooter_bg_min.png");
+  }
+
+  .main-games .wrap {
+    background-image: url("../imgs/main_games_bg_min.png");
+  }
+
+  .articles-container .wrap {
+    background-image: url("../imgs/articles_bg_min.png");
+  }
+  .articles-container .row {
+    flex-direction: column;
+  }
+
+  .main-article-block {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .article-block {
+    width: 46.54%;
+    margin: 0 0 16px;
+  }
 }
