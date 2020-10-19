@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+a, img, button, input {
+  display: block;
+}
+
+a, img, button {
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+/* Variables */
+/* Mixings */
+/* Main Setting */
+html {
+  font-family: "Mitr";
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  width: 1005px;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .container {
+    width: 310px;
+  }
+}
+.s-1 {
+  margin: 48px 0;
+}
+
+.elips {
+  position: absolute;
+  width: 79.6%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.block-title {
+  background: -webkit-linear-gradient(180deg, #FEFEB7 0%, #FFEB5A 33.33%, #C98E24 68.23%, #E6BB34 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.main-text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.block-container {
+  background: linear-gradient(60deg, #FFEB5A 0%, #C98E24 68.23%);
+  padding: 3px 3px;
+  border-radius: 10px;
+}
+.block-container .wrap {
+  border-radius: 10px;
+  padding: 50px 33px 30px;
+  background-image: url("../imgs/game_bg.png");
+}
+
+.block-section .block-title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+}
+
+.card-item {
+  width: 23.6%;
+  margin-bottom: 20px;
+}
+.card-item img {
+  width: 100%;
+}
+
+.footer .section-elips {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .block-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .block-container .wrap {
+    border-radius: 10px;
+    padding: 20px 20px 0;
+  }
+
+  .card-item {
+    width: 46.875%;
+    margin-bottom: 20px;
+  }
+}
