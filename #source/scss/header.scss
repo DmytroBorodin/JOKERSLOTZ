@@ -146,12 +146,15 @@ nav {
 }
 @media screen and (max-width: 576px) {
 	.header-text {
-		width: 275%;
+		width: 220%;
 	}
 }
 @media screen and (max-width: 374px) {
 	.navbar {
 		padding: 0 30px;
+	}
+	.header-text {
+		width: 275%;
 	}
 }
 
